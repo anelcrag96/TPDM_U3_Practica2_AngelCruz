@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "500867574788",
+    "firebase_url": "https://tpdm-u3-practica2-angelcruz.firebaseio.com",
+    "project_id": "tpdm-u3-practica2-angelcruz",
+    "storage_bucket": "tpdm-u3-practica2-angelcruz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500867574788:android:c3a627b8132a0fd1",
+        "android_client_info": {
+          "package_name": "mx.edu.ittepic.anelcruzag.tpdm_u3_practica2_angelcruz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500867574788-meusaub2rviqi266nelgr6mhd4r43h8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdk7CxHFGkHcBlCdiG7mxrZ1BqTqZeStc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500867574788-meusaub2rviqi266nelgr6mhd4r43h8f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
