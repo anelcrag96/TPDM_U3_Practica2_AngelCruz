@@ -40,7 +40,7 @@ public class ListadoAlumnos extends AppCompatActivity {
         listaalumnos=findViewById(R.id.listaAlumno);
         regresar=findViewById(R.id.btnRegresarListaAlumno);
         firestore=FirebaseFirestore.getInstance();
-        alumnos=firestore.collection("Alumno");
+        alumnos=firestore.collection("alumnos");
 
         listaalumnos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

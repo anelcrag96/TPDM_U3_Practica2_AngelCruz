@@ -22,7 +22,7 @@ public class RegistroAplicaciones extends AppCompatActivity {
     EditText fechaaplicacion, aplicador, aula, horainicio, horafin;
     Button insertar, cancelar;
     FirebaseFirestore firestore;
-    CollectionReference aplicacion;
+    CollectionReference aplicaciones;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class RegistroAplicaciones extends AppCompatActivity {
         cancelar=findViewById(R.id.btnCancelarAplicacion);
 
         firestore=FirebaseFirestore.getInstance();
-        aplicacion=firestore.collection("Aplicacion");
+        aplicaciones=firestore.collection("aplicaciones");
 
         insertar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +59,7 @@ public class RegistroAplicaciones extends AppCompatActivity {
     }
 
     private void insertar(){
-        aplicacion.add(campos()).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+        aplicaciones.add(campos()).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
             @Override
             public void onSuccess(DocumentReference documentReference) {
                 mensaje("Insertado con exito");

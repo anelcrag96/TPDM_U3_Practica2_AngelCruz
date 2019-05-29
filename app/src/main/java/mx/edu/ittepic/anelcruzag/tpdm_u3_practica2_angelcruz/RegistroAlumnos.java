@@ -39,7 +39,7 @@ public class RegistroAlumnos extends AppCompatActivity {
         cancelar=findViewById(R.id.btnCancelarAlumno);
 
         firestore=FirebaseFirestore.getInstance();
-        alumnos=firestore.collection("Alumno");
+        alumnos=firestore.collection("alumnos");
 
         insertar.setOnClickListener(new View.OnClickListener() {
             @Override

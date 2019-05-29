@@ -29,7 +29,7 @@ public class ListadoAplicaciones extends AppCompatActivity {
     Button regresar;
     ListView listaalumnos;
     FirebaseFirestore firestore;
-    CollectionReference aplicacion;
+    CollectionReference aplicaciones;
     List<Map> datosaplicacion;
 
     @Override
@@ -40,7 +40,7 @@ public class ListadoAplicaciones extends AppCompatActivity {
         listaalumnos=findViewById(R.id.listaAlumno);
         regresar=findViewById(R.id.btnRegresarListaAlumno);
         firestore=FirebaseFirestore.getInstance();
-        aplicacion=firestore.collection("Aplicacion");
+        aplicaciones=firestore.collection("aplicaciones");
 
         listaalumnos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -103,7 +103,7 @@ public class ListadoAplicaciones extends AppCompatActivity {
     }
 
     private void cargardatos(){
-        aplicacion.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+        aplicaciones.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
             @Override
             public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                 if  (queryDocumentSnapshots.size()<=0){
